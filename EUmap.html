@@ -1,20 +1,16 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8">	
 		<link rel="stylesheet" href="EUmap.css">
-		<link rel="stylesheet" href="Map.js">
-		<link rel="stylesheet" href="test.html">
 		<title>Interactive european map</title>
 	</head>
 		<header>
 			<div class ="Head">
-				<input type="submit" value="Регистрация" class = "Registr">
+				<button id="Reg" class="Registr"> Регистрация </button>
 			</div>
 			<div class ="Head">
-				<input type="submit" value="Войти" class = "Login">
-			</div>
-			<div class ="Head">			
+				<button id="Log" class="Login"> Логин </button>
 			</div>
 			<div class ="Head">
 			<input type="search" name="search" placeholder="Поиск..." class = "search">
@@ -31,7 +27,13 @@
 		</header>
 		<hr>
 	<body >
-
+		<div id="Modal_Reg" class ="modal">
+			<div class ="modal_content">
+				<span class ="close"> &times; </span>
+				<p>Модальное окно</p>
+			</div>	
+		</div>
+		<script src="Map.js"></script>	
 	</body>
 
 </html>
