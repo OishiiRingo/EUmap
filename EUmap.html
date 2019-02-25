@@ -5,34 +5,58 @@
 		<link rel="stylesheet" href="EUmap.css">
 		<title>Interactive european map</title>
 	</head>
+	
 		<header>
-			<div class ="Head">
-				<button id="Reg" class="Registr"> Регистрация </button>
+			<div class="head">
+				<button id="Reg" class="registr">Регистрация</button>
 			</div>
-			<div class ="Head">
-				<button id="Log" class="Login"> Логин </button>
+			
+			<div class="head">
+				<button id="Log" class="login">Логин</button>
 			</div>
-			<div class ="Head">
-			<input type="search" name="search" placeholder="Поиск..." class = "search">
-			<select>
-				<option>Название страны</option>
-				<option>Название города</option>
-				<option>Географическое положение</option>
-				<option>Валюта</option>
-				<option>Место в мире</option>
-				<option>Место в Европе</option>
-			</select>
-			<input type="submit" value="Найти" class = "submit">
+			
+			<div class ="head">
+				<input type="search" name="search" placeholder="Поиск..." class="search">
+				
+				<select>
+					<option>Название страны</option>
+					<option>Название города</option>
+					<option>Географическое положение</option>
+					<option>Валюта</option>
+					<option>Место в мире</option>
+					<option>Место в Европе</option>
+				</select>
+				
+				<input type="submit" value="Найти" class="submit">
 			</div>
 		</header>
 		<hr>
+		
 	<body >
-		<div id="Modal_Reg" class ="modal">
-			<div class ="modal_content">
-				<span class ="close"> &times; </span>
+		<img src="eu3.png" class="map">
+		<div class="body">
+			<p class="filter">Фильтры:</p>
+			<select>
+				<option>Страны</option>
+				<option>Формы правления</option>
+				<option>Европейский Союз</option>
+				<option>Географическое положение</option>
+				<option>Основной продукт экспорта</option>
+			</select>
+		</div>
+		
+		<div class="info">
+			af
+		</div>
+		<hr class="vertical">
+		
+		<div id="Modal_Reg" class="modal">
+			<div class="modal_content">
+				<span class="close"> &times; </span>
 				<p>Модальное окно</p>
 			</div>	
 		</div>
+		
 		<script src="Map.js"></script>	
 	</body>
 
