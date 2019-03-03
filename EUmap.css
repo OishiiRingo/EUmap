@@ -1,5 +1,8 @@
 body{
 	background-color: #24292d;
+	background-image: url(back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header{
@@ -24,7 +27,7 @@ header{
 	text-decoration:none;
 	text-align:center;
 	padding:5px 36px;
-	margin-left: 1200px;
+	margin-left: 1300px;
 	border: none;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
@@ -34,7 +37,7 @@ header{
 
 .registr:hover{
 	padding:5px 36px;
-	margin-left: 1200px;
+	margin-left: 1300px;
 	border: none;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
@@ -44,7 +47,7 @@ header{
 .registr:active{
 	padding:5px 36px;
 	border: none;
-	margin-left: 1200px;
+	margin-left: 1300px;
 	font:184x "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	color:#dcdcdc;
@@ -53,34 +56,34 @@ header{
 
 .login{
 	text-decoration:none;
-	text-align:center; 
-	padding:5px 36px; 
-	margin-left: 1000px;
-	border: none; 
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background:#24292d; 
+	text-align:center;
+	padding:5px 36px;
+	margin-left: 1100px;
+	border: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background:#24292d;
 }
 
 .login:hover{
-	padding:5px 36px; 
-	margin-left: 1000px;
-	border: none; 
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background-color:#31383d;  
+	padding:5px 36px;
+	margin-left: 1100px;
+	border: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background-color:#31383d;
 }
  
 .login:active{
-	padding:5px 36px; 
-	border: none; 
-	margin-left: 1000px;
-	font:184x "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background-color:#414b54;    
+	padding:5px 36px;
+	border: none;
+	margin-left: 1100px;
+	font:184x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background-color:#414b54;
 }
 
 select{ 
@@ -90,40 +93,41 @@ select{
 
 .submit{
 	text-decoration:none;
-	text-align:center; 
+	text-align:center;
 	padding:5px 36px;
-	border: none; 
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background:#24292d; 
+	border: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background:#24292d;
 }
 
 .submit:hover{
-	padding:5px 36px; 
-	border: none; 
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background-color:#31383d;   
+	padding:5px 36px;
+	border: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background-color:#31383d;
 }
 .submit:active{
 	padding:5px 36px; 
-	border: none; 
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; 
-	font-weight:bold; 
-	color:#dcdcdc; 
-	background-color:#414b54;    
+	border: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#dcdcdc;
+	background-color:#414b54;
 }
 
 hr{
 	border: 2px solid;
 	color: #808080;
+	width: 1885px;
 }
 
 .map{
     position: absolute;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .body{
@@ -141,28 +145,22 @@ hr{
 	position: absolute;
 	margin-left: 1300px;
 	margin-top: 50px;
+	color: lightgray;
+	line-height: 0.5;
+	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
 .vertical{
-	height: 1000px;
+	height: 1020px;
     width: 0px;
-    margin-left: 1040px;
+    margin-left: 1120px;
 }
 
-.modal{
-	display: none;
-	position: fixed;
-	left:400px;
-	top:100px;
-	width: 500px;
-	height: 500px;
-	background-color: #FFF;
-}
-
-.close{
-	color: #aaa;
-	float: right;
-	font-size: 50px;
-	font-weight: bold;
-	cursor: pointer;
+footer{
+	padding-bottom:25px;
+	text-align: center;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	position: absolute;
+	color: lightgray;
 }

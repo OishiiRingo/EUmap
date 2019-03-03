@@ -3,37 +3,37 @@
 	<head>
 		<meta charset="utf-8">	
 		<link rel="stylesheet" href="EUmap.css">
+		<link rel="stylesheet" href="scripts.css">
 		<title>Interactive european map</title>
 	</head>
 	
-		<header>
-			<div class="head">
-				<button id="Reg" class="registr">Регистрация</button>
-			</div>
-			
-			<div class="head">
-				<button id="Log" class="login">Логин</button>
-			</div>
-			
-			<div class ="head">
-				<input type="search" name="search" placeholder="Поиск..." class="search">
-				
-				<select>
-					<option>Название страны</option>
-					<option>Название города</option>
-					<option>Географическое положение</option>
-					<option>Валюта</option>
-					<option>Место в мире</option>
-					<option>Место в Европе</option>
-				</select>
-				
-				<input type="submit" value="Найти" class="submit">
-			</div>
-		</header>
-		<hr>
+	<header>
+		<div class="head">
+			<button id="Reg" class="registr">Регистрация</button>
+		</div>
 		
-	<body >
-		<img src="eu3.png" class="map">
+		<div class="head">
+			<button id="Log" class="login">Логин</button>
+		</div>
+		
+		<div class ="head">
+			<input type="search" name="search" placeholder="Поиск..." class="search">
+			<select>
+				<option>Название страны</option>
+				<option>Название города</option>
+				<option>Географическое положение</option>
+				<option>Валюта</option>
+				<option>Место в мире</option>
+				<option>Место в Европе</option>
+			</select>
+			<input type="submit" value="Найти" class="submit">
+		</div>
+	</header>
+	
+	<hr>
+		
+	<body>
+		<span class="map"><img src="eu3.png"></span>
 		<div class="body">
 			<p class="filter">Фильтры:</p>
 			<select>
@@ -46,8 +46,10 @@
 		</div>
 		
 		<div class="info">
-			af
+			Информация
+			<p>тут будет вызываться инфа из бд или файла</p>
 		</div>
+		
 		<hr class="vertical">
 		
 		<div id="Modal_Reg" class="modal">
@@ -58,6 +60,15 @@
 		</div>
 		
 		<script src="Map.js"></script>	
+	
 	</body>
-
+		
+	<footer>
+		<hr>
+		<div>info <span>типа футер</div>
+		<div>info</div>
+		<div>info</div>
+		
+	</footer>
+	
 </html>
