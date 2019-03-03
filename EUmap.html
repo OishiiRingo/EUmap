@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">	
 		<link rel="stylesheet" href="EUmap.css">
-		<link rel="stylesheet" href="scripts.css">
+		<link rel="stylesheet" href="Modal.css">
 		<title>Interactive european map</title>
 	</head>
 	
@@ -31,7 +31,6 @@
 	</header>
 	
 	<hr>
-		
 	<body>
 		<span class="map"><img src="eu3.png"></span>
 		<div class="body">
@@ -51,16 +50,65 @@
 		</div>
 		
 		<hr class="vertical">
-		
-		<div id="Modal_Reg" class="modal">
-			<div class="modal_content">
-				<span class="close"> &times; </span>
-				<p>Модальное окно</p>
-			</div>	
+			
+		<div class = "Window_close">
+			<span class="close"> &times; </span>
 		</div>
-		
-		<script src="Map.js"></script>	
-	
+		<div id="Modal_Reg" class="modal">
+			<form action="verification.php" method="POST">
+				<table class = "Reg_table">
+					<caption><h1>Регистрация</h1></caption>
+					<tr>
+						<td>Логин:</td>
+					</tr>
+					<tr>
+						<td><input id ="Login_reg" type="text" size="20"></td>
+					</tr>
+					<tr>
+						<td>Пароль:</td>
+					</tr>
+					<tr>
+						<td><input id ="Password_reg" type="password" size="20" maxlength="20"></td>
+					</tr>
+					<tr>
+						<td>Подтверждение пароля:</td>
+					</tr>
+					<tr>
+						<td><input id ="Password2_reg" type="password" size="20" maxlength="20"></td>
+					</tr>
+					<tr>
+					<td colspan="2"><button id="Modal_reg_button" class="Reg">Регистрация</button>
+					</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<div id="Modal_Log" class="modal">
+			<form action="verification.php" method="POST">
+				<table class = "Reg_table">
+					<caption><h1>Войти</h1></caption>
+					<tr>
+						<td>Логин:</td>
+					</tr>
+					<tr>
+						<td><input type="text" size="20" name="login_reg"></td>
+					</tr>
+					<tr>
+						<td>Пароль:</td>
+					</tr>
+					<tr>
+						<td><input type="password" size="20" maxlength="20" name="password_reg"></td>
+					</tr>
+					<tr>
+					<td colspan="2"><button id="Modal_log_button" class="Reg">Войти</button>
+					</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<script src="Modal_scripts.js"></script>	
 	</body>
 		
 	<footer>
