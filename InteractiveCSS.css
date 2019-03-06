@@ -1,0 +1,30 @@
+svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.Eumap{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.Austria,.Belgium,.Britian,.Germany,.Belarussia,.Bolgar,.Moldavia,.Poland,.Russia,.Ruminia,.Slovakia,.Chehia,.Ukraine,.Dania,.Iceland,.Latvia,.Ireland,.Luxemburg,.Cherno,.Horvatia,.Slovenia,.Serbia,.Portugalia,.Makedonia,.Italia,.Ispania,.Grecia,.Bosnia,.Albania,.Schwecia,.Estonia,.Finland,.Norway,.Litva,.Netherland,.France,.Schweiz,.Vengria{
+	opacity: 0;
+	fill: green;
+}
+
+@keyframes Change{
+	from {opacity: 0;}
+	50% {opacity: 0.5;}
+	to {opacity: 0;}
+}
+
+.Austria:hover,.Belgium:hover,.Britian:hover,.Germany:hover,.Belarussia:hover,.Bolgar:hover,.Moldavia:hover,.Poland:hover,.Russia:hover,.Ruminia:hover,.Slovakia:hover,.Chehia:hover,.Ukraine:hover,.Dania:hover,.Iceland:hover,.Latvia:hover,.Ireland:hover,.Luxemburg:hover,.Cherno:hover,.Horvatia:hover,.Slovenia:hover,.Serbia:hover,.Portugalia:hover,.Makedonia:hover,.Italia:hover,.Ispania:hover,.Grecia:hover,.Bosnia:hover,.Albania:hover,.Schwecia:hover,.Estonia:hover,.Finland:hover,.Norway:hover,.Litva:hover,.Netherland:hover,.France:hover,.Schweiz:hover,.Vengria:hover{
+	animation: Change 0.7s ease-in infinite;
+}

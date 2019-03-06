@@ -15,7 +15,7 @@ var modal_reg_button = document.getElementById("Modal_reg_button");
 
 
 
-reg_button.onclick = function(){
+function OpenReg(){
 	if(action_log == true){
 	modal_log.style.display = "none";
 	action_log = false;
@@ -26,7 +26,7 @@ reg_button.onclick = function(){
 	
 }
 
-log_button.onclick = function(){
+function OpenLog(){
 	if(action_reg == true){
 	modal_reg.style.display = "none";
 	action_reg = false;
