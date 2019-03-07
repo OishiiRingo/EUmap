@@ -25,6 +25,11 @@ svg{
 	to {opacity: 0;}
 }
 
-.Austria:hover,.Belgium:hover,.Britian:hover,.Germany:hover,.Belarussia:hover,.Bolgar:hover,.Moldavia:hover,.Poland:hover,.Russia:hover,.Ruminia:hover,.Slovakia:hover,.Chehia:hover,.Ukraine:hover,.Dania:hover,.Iceland:hover,.Latvia:hover,.Ireland:hover,.Luxemburg:hover,.Cherno:hover,.Horvatia:hover,.Slovenia:hover,.Serbia:hover,.Portugalia:hover,.Makedonia:hover,.Italia:hover,.Ispania:hover,.Grecia:hover,.Bosnia:hover,.Albania:hover,.Schwecia:hover,.Estonia:hover,.Finland:hover,.Norway:hover,.Litva:hover,.Netherland:hover,.France:hover,.Schweiz:hover,.Vengria:hover{
+.Austria_animation,.Belgium_animation,.Britian_animation,.Germany_animation,.Belarussia_animation,.Bolgar_animation,.Moldavia_animation,.Poland_animation,.Russia_animation,.Ruminia_animation,.Slovakia_animation,.Chehia_animation,.Ukraine_animation,.Dania_animation,.Iceland_animation,.Latvia_animation,.Ireland_animation,.Luxemburg_animation,.Cherno_animation,.Horvatia_animation,.Slovenia_animation,.Serbia_animation,.Portugalia_animation,.Makedonia_animation,.Italia_animation,.Ispania_animation,.Grecia_animation,.Bosnia_animation,.Albania_animation,.Schwecia_animation,.Estonia_animation,.Finland_animation,.Norway_animation,.Litva_animation,.Netherland_animation,.France_animation,.Schweiz_animation,.Vengria_animation{
 	animation: Change 0.7s ease-in infinite;
+}
+
+.Austria_clicked,.Belgium_clicked,.Britian_clicked,.Germany_clicked,.Belarussia_clicked,.Bolgar_clicked,.Moldavia_clicked,.Poland_clicked,.Russia_clicked,.Ruminia_clicked,.Slovakia_clicked,.Chehia_clicked,.Ukraine_clicked,.Dania_clicked,.Iceland_clicked,.Latvia_clicked,.Ireland_clicked,.Luxemburg_clicked,.Cherno_clicked,.Horvatia_clicked,.Slovenia_clicked,.Serbia_clicked,.Portugalia_clicked,.Makedonia_clicked,.Italia_clicked,.Ispania_clicked,.Grecia_clicked,.Bosnia_clicked,.Albania_clicked,.Schwecia_clicked,.Estonia_clicked,.Finland_clicked,.Norway_clicked,.Litva_clicked,.Netherland_clicked,.France_clicked,.Schweiz_clicked,.Vengria_clicked{
+	fill: pink;
+	opacity: 0.3; 
 }
