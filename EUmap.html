@@ -9,33 +9,37 @@
 
 		<title>Interactive european map</title>
 	</head>
-	
-	<header>
-		<div class="head">
-			<button id="Reg" class="registr" onclick='OpenLog()'>Регистрация</button>
-		</div>
-		
-		<div class="head">
-			<button id="Log" class="login" onclick='OpenReg()'>Логин</button>
-		</div>
-		
-		<div class ="head">
-			<input type="search" name="search" placeholder="Поиск..." class="search">
-			<select>
-				<option>Название страны</option>
-				<option>Название города</option>
-				<option>Географическое положение</option>
-				<option>Валюта</option>
-				<option>Место в мире</option>
-				<option>Место в Европе</option>
-			</select>
-			<input type="submit" value="Найти" class="submit">
 
-		</div>
-	</header>
-	
-	<hr>
 	<body>
+		<header>
+			<div class="head">
+				<button id="Main" class="main_page" >Главная</button>
+			</div>
+		
+			<div class ="head">
+				<input type="search" name="search" placeholder="Поиск..." class="search">
+				<select>
+					<option>Название страны</option>
+					<option>Название города</option>
+					<option>Географическое положение</option>
+					<option>Валюта</option>
+					<option>Место в мире</option>
+					<option>Место в Европе</option>
+				</select>
+				<input type="submit" value="Найти" class="submit">
+			</div>
+		
+			<div class="head">
+				<button id="Reg" class="registr" onclick='OpenLog()'>Регистрация</button>
+			</div>
+			
+			<div class="head">
+				<button id="Log" class="login" onclick='OpenReg()'>Логин</button>
+			</div>
+		</header>
+		
+		<hr>
+	
 		<div class="map">	
 			<img class = "EUmap" src="EuropeMap2.svg">
 			<svg class = "Countries" viewBox = "0 0 1024 1024">
@@ -129,8 +133,8 @@
 				<path id = "Malta" class = "Malta Malta_default" onclick = "Click(id)" onmouseover = "Hover(id)" onmouseout = "HoverOut(id)" d = "m 440.62491,935.11625 -1.49043,0.94846 1.49043,2.43888 2.30339,0.54198 0.40648,1.08394 0.27099,2.1679 2.0324,1.49043 2.30339,0.40648 c 0,0 0.94846,-1.35494 0.94846,-1.89691 0,-0.54197 -0.81297,-2.0324 -0.81297,-2.0324 l -2.0324,-0.27099 -1.76141,-1.35493 -0.67747,-1.35494 -1.35494,-1.62592 z"><title> Мальта </title></path>
 
 			</svg>
-			
 		</div>
+		
 		<div class="body">
 			<p class="filter">Фильтры:</p>
 			<select id = "Filter" onchange = "Selector()">
@@ -175,8 +179,7 @@
 						<td><input id ="Password2_reg" type="password" size="20" maxlength="20"></td>
 					</tr>
 					<tr>
-					<td colspan="2"><button id="Modal_reg_button" class="Reg" >Регистрация</button>
-					</td>
+						<td colspan="2"><button id="Modal_reg_button" class="Reg" >Регистрация</button>					</td>
 					</tr>
 				</table>
 			</form>
@@ -199,23 +202,19 @@
 						<td><input type="password" size="20" maxlength="20" name="password_reg"></td>
 					</tr>
 					<tr>
-					<td colspan="2"><button id="Modal_log_button" class="Reg">Войти</button>
-					</td>
+						<td colspan="2"><button id="Modal_log_button" class="Reg">Войти</button></td>
 					</tr>
 				</table>
 			</form>
 		</div>
-	<script src="Modal_scripts.js"></script>
-	<script src="InteractiveJS.js"></script>
-
-	</body>
-		
-	<footer>
-		<hr>
-		<div>info <span>типа футер</div>
-		<div>info</div>
-		<div>info</div>
-		
-	</footer>
+		<script src="Modal_scripts.js"></script>
+		<script src="InteractiveJS.js"></script>
 	
+		<footer>
+			<hr>
+			<div>info <span>типа футер</div>
+			<div>info</div>
+			<div>info</div>
+		</footer>
+	</body>
 </html>
