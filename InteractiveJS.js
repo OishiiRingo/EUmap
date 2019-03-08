@@ -1,15 +1,23 @@
-var Countries = ["Malta","Vat","San","Andorra","Monako","Lih","Austria","Belgium","Britian","Germany","Belarussia","Bolgar","Moldavia","Poland","Russia","Ruminia","Slovakia","Chehia","Ukraine","Dania","Iceland","Latvia","Ireland","Luxemburg","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Italia","Ispania","Grecia","Bosnia","Albania","Schwecia","Estonia","Finland","Norway","Litva","Netherland","France","Schweiz","Vengria"];
-var ATM = "Vat";
-var DM = "Lih"
-var KM = ["Belgium","Lixemburg","Monako","Netherland","Dania","Norway","Schwecia","Ispania"];
-var PR = ["Russia","Belarussia"];
-var	PPR = ["Ruminia","Ukraine"];
-var FPR = ["Austria","Germany","Schweiz"];
-var PM = "Britian";
-var PK = "Andorra";
-var Par = ["Malta","San","Bolgar","Moldavia","Poland","Slovakia","Chehia","Iceland","Latvia","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Italia","Grecia","Albania","Estonia","Finland","Litva","Vengria","Ireland"];
-var SR = "France";
-var R = "Bosnia";
+var Countries = ["Malta","Vat","San","Andorra","Monako","Lih","Austria","Belgium","Britian","Germany","Belarussia","Bolgar","Moldavia","Poland","Russia","Ruminia","Slovakia","Chehia","Ukraine","Dania","Iceland","Latvia","Ireland","Luxemburg","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Italia","Ispania","Grecia","Bosnia","Albania","Schwecia","Estonia","Finland","Norway","Litva","Netherland","France","Schweiz","Vengria"]; //Все страны
+var ATM = "Vat"; //Абсолютная теократическая монархия
+var DM = "Lih" //Дуалистическая монархия
+var KM = ["Belgium","Luxemburg","Monako","Netherland","Dania","Norway","Schwecia","Ispania"]; //Конституционная монархия
+var PR = ["Russia","Belarussia"]; //Рабство
+var	PPR = ["Ruminia","Ukraine"]; //Президентско парламентская республика
+var FPR = ["Austria","Germany","Schweiz"];//Федеративно парламентская республика
+var PM = "Britian";//парламентская монархия
+var PK = "Andorra";//Парламентское княжесто
+var Par = ["Malta","San","Bolgar","Moldavia","Poland","Slovakia","Chehia","Iceland","Latvia","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Italia","Grecia","Albania","Estonia","Finland","Litva","Vengria","Ireland"];//Парламентская республика
+var SR = "France";//Смешанная республика
+var R = "Bosnia";//Республика
+//Те кто в ЕС
+var EsYes = ["Austria","Belgium","Bolgar","Vengria","Germany","Grecia","Dania","Ireland","Ispania","Italia","Latvia","Litva","Luxemburg","Malta","Netherland","Poland","Portugalia","Ruminia","Slovakia","Slovenia","Finland","France","Horvatia","Chehia","Schwecia","Estonia"];
+//По сторонам света
+var VE = ["Germany","Lih","France","Latvia","Estonia","Albania","Andorra","Grecia","Italia","Serbia"];
+var SE = ["Bolgar","Moldavia","Ruminia","Slovakia","Finland","Makedonia","Horvatia","Cherno"];
+var ZE = ["Austria","Ireland","Netherland","Schweiz","Vengria","Chehia","Ukraine","Litva","Norway","Malta","Slovenia"];
+var UE = ["Belgium","Britian","Luxemburg","Monako","Belarussia","Poland","Russia","Dania","Iceland","Schwecia","Bosnia","Vat","Ispania","Portugalia","San"];
+var SelectedCountry = "";
 
 function Click(ClassName){
 	for(var i = 0;i < Countries.length; i++)
@@ -37,16 +45,36 @@ function Click(ClassName){
 		 				case R:document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#E6399B";break;
 		 			}	 		
 		 		}
-			}	
-		}		
+		 		if(document.getElementById("Filter").selectedIndex == 2){
+		 			if(EsYes.indexOf(Countries[i]) != -1){
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "blue";
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
+		 			}
+		 			else
+		 			{
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "green";
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0;
+		 			}
+		 		}
+		 		if(document.getElementById("Filter").selectedIndex == 3){
+		 			switch(ClassName){
+		 				case CheckCountry(ClassName,VE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "Yellow";break;
+		 				case CheckCountry(ClassName,SE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "blue";break;
+		 				case CheckCountry(ClassName,ZE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "green";break;
+		 				case CheckCountry(ClassName,UE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "pink";break;
+		 			}	 		
+		 		}
+		 	}
+		}	
+	}		
 		
-	}
 
 	var Length = document.getElementsByClassName(ClassName).length;
 	for(var i = 0;i < Length; i++){
 		document.getElementsByClassName(ClassName + "_default")[i].style.fill = "white";
 		document.getElementsByClassName(ClassName + "_default")[i].style.opacity = 0.8;
 		}	
+	SelectedCountry = ClassName;
 }
 
 function Hover(ClassName){
@@ -87,6 +115,34 @@ function Selector(){
 		ChangeColor(SR,"#A68400");
 		ChangeColor(R,"#E6399B");
 	}
+	if(document.getElementById("Filter").selectedIndex == 2){
+		for(var i = 0;i < Countries.length; i++)
+		{
+			var Length = document.getElementsByClassName(Countries[i]).length;
+			for(var j = 0;j < Length; j++){
+				if(EsYes.indexOf(Countries[i]) != -1){
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "blue";
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
+		 			}
+		 			else
+		 			{
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "green";
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0;
+		 			}
+			}	
+		}
+	}
+	if(document.getElementById("Filter").selectedIndex == 3){
+		ChangeColor(VE, "Yellow");
+		ChangeColor(SE,"blue");
+		ChangeColor(ZE,"green");
+		ChangeColor(UE,"pink");
+	}
+	for(var i =0;i < SelectedCountry.length;i++){
+		document.getElementsByClassName(SelectedCountry)[i].style.fill = "white";
+		document.getElementsByClassName(SelectedCountry)[i].style.opacity = 0.8;
+	}
+	
 }
 
 function ChangeColor(prName, colorName){
