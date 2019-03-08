@@ -9,33 +9,37 @@
 
 		<title>Interactive european map</title>
 	</head>
-	
-	<header>
-		<div class="head">
-			<button id="Reg" class="registr" onclick='OpenLog()'>Регистрация</button>
-		</div>
-		
-		<div class="head">
-			<button id="Log" class="login" onclick='OpenReg()'>Логин</button>
-		</div>
-		
-		<div class ="head">
-			<input type="search" name="search" placeholder="Поиск..." class="search">
-			<select>
-				<option>Название страны</option>
-				<option>Название города</option>
-				<option>Географическое положение</option>
-				<option>Валюта</option>
-				<option>Место в мире</option>
-				<option>Место в Европе</option>
-			</select>
-			<input type="submit" value="Найти" class="submit">
 
-		</div>
-	</header>
-	
-	<hr>
 	<body>
+		<header>
+			<div class="head">
+				<button id="Main" class="main_page" >Главная</button>
+			</div>
+		
+			<div class ="head">
+				<input type="search" name="search" placeholder="Поиск..." class="search">
+				<select>
+					<option>Название страны</option>
+					<option>Название города</option>
+					<option>Географическое положение</option>
+					<option>Валюта</option>
+					<option>Место в мире</option>
+					<option>Место в Европе</option>
+				</select>
+				<input type="submit" value="Найти" class="submit">
+			</div>
+		
+			<div class="head">
+				<button id="Reg" class="registr" onclick='OpenLog()'>Регистрация</button>
+			</div>
+			
+			<div class="head">
+				<button id="Log" class="login" onclick='OpenReg()'>Логин</button>
+			</div>
+		</header>
+		
+		<hr>
+	
 		<div class="map">	
 			<img class = "EUmap" src="EuropeMap.svg">
 			<svg class = "Countries" viewBox = "0 0 1024 1024">
@@ -118,8 +122,8 @@
 
 				<script src="InteractiveJS.js"></script>
 			</svg>
-			
 		</div>
+		
 		<div class="body">
 			<p class="filter">Фильтры:</p>
 			<select>
@@ -194,17 +198,14 @@
 				</table>
 			</form>
 		</div>
-	<script src="Modal_scripts.js"></script>
-	<script src="InteractiveJS.js"></script>
-
-	</body>
-		
-	<footer>
-		<hr>
-		<div>info <span>типа футер</div>
-		<div>info</div>
-		<div>info</div>
-		
-	</footer>
+		<script src="Modal_scripts.js"></script>
+		<script src="InteractiveJS.js"></script>
 	
+		<footer>
+			<hr>
+			<div>info <span>типа футер</div>
+			<div>info</div>
+			<div>info</div>
+		</footer>
+	</body>
 </html>
