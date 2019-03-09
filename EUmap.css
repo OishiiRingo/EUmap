@@ -3,19 +3,17 @@ body{
 	background-image: url(back.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	width:1890px;
 }
 
 header{
 	height: 48px;
 	padding-left:40px;
 	padding-top:20px;
-	display: flex;
-    flex-wrap: nowrap;
-
 }
 
 .head{
-
+	display:inline-block;
 }
 
 .main_page{
@@ -176,11 +174,12 @@ hr{
 
 .info{
 	position: absolute;
-	margin-left: 1300px;
-	margin-top: 50px;
+	margin-left: 1200px;
+	margin-top: 40px;
 	color: lightgray;
 	line-height: 0.5;
 	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width:550px;
 }
 
 .vertical{
@@ -202,4 +201,10 @@ footer{
 	position: absolute;
 	margin-top: 80px;
 	margin-left: 40px;
+	color:white;
+}
+
+.Legend{
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: white;
 }

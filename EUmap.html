@@ -6,14 +6,15 @@
 		<link rel="stylesheet" href="Modal.css">
 		<link rel="stylesheet" href="InteractiveCSS.css">
 		
-
 		<title>Interactive european map</title>
 	</head>
 
 	<body>
 		<header>
 			<div class="head">
-				<button id="Main" class="main_page" >Главная</button>
+				<form  action="EUmap.html">
+					<button type="submit" id="Main" class="main_page" >Главная</button>
+				</form>
 			</div>
 		
 			<div class ="head">
@@ -146,13 +147,15 @@
 			</select>
 		</div>
 
-		<div class = "WhitePower"><img src = "Quads/White.png"><span> Выбранная страна.<br> </span></div>
-		<span id = "Legend" Class = "Legend">
+		<div class = "WhitePower"><img src = "Quads/White.png"><span> Выбранная страна<br> </span></div>
+		<span id = "Legend" class = "Legend">
 		</span>
 		
 		<div class="info">
-			Информация
-			<p>тут будет вызываться инфа из бд или файла</p>
+			<p>Информация. Буду тут задания писать, чтобы не забыть</p>
+			<p>В идеале, через php сделать перенаправление, чтобы в адресной строке не было ? на конце при использовании кнопки Главная</p>
+			<p>Сделал карту с кружочками. Надо чутка границы выделения поменять. Если влом менять, попробую сам разобраться</p>
+			<p>Еще момент с модальными окнами. Регистрация вызывает окно Логина и наоборот</p>
 		</div>
 		
 		<hr class="vertical">

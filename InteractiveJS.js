@@ -13,10 +13,10 @@ var R = "Bosnia";//Республика
 //Те кто в ЕС
 var EsYes = ["Austria","Belgium","Bolgar","Vengria","Germany","Grecia","Dania","Ireland","Ispania","Italia","Latvia","Litva","Luxemburg","Malta","Netherland","Poland","Portugalia","Ruminia","Slovakia","Slovenia","Finland","France","Horvatia","Chehia","Schwecia","Estonia"];
 //По сторонам света
-var VE = ["Germany","Lih","France","Latvia","Estonia","Albania","Andorra","Grecia","Italia","Serbia"];
-var SE = ["Bolgar","Moldavia","Ruminia","Slovakia","Finland","Makedonia","Horvatia","Cherno"];
-var ZE = ["Austria","Ireland","Netherland","Schweiz","Vengria","Chehia","Ukraine","Litva","Norway","Malta","Slovenia"];
-var UE = ["Belgium","Britian","Luxemburg","Monako","Belarussia","Poland","Russia","Dania","Iceland","Schwecia","Bosnia","Vat","Ispania","Portugalia","San"];
+var VE = ["Russia","Ukraine","Belarussia","Moldavia","Ruminia","Bolgar","Vengria","Chehia","Slovakia","Poland"];
+var SE = ["Finland","Litva","Latvia","Estonia","Norway","Schwecia","Dania","Iceland","Britian","Ireland"];
+var ZE = ["Austria","Schweiz","Netherland","Belgium","Luxemburg","Monako","Germany","Lih","France"];
+var UE = ["Bosnia","Vat","Ispania","Portugalia","San","Malta","Slovenia","Makedonia","Horvatia","Cherno","Andorra","Grecia","Italia","Serbia","Albania"];
 //Основной продукт экспорта
 var TOiT = ["Austria","Britian","Germany","Lih","Luxemburg","Monako","Netherland","France","Schweiz","Belarussia","Vengria","Poland","Slovakia","Chehia","Dania","Estonia","Schwecia","Andorra","Ispania","Italia","Malta","San","Slovenia","Horvatia"];
 var Elektronika = ["Ireland","Finland"];
@@ -27,9 +27,9 @@ var Neft = ["Russia","Ukraine","Norway"];
 //for fun
 var SelectedCountry = "";
 var Colors = ["#4C036E","#67E667","#FFA700","#5CCCCC","#FFFF73","#FF9640","#009999","#A64B00","#180773","#A68400","#E6399B"];
-var Pravlenia = ["Абсолютная теократическая монархия.","Дуалистическая монархия.","Конституционная монархия.","Президентская республика.","Президентско-парламентская республика.","Федеративно-парламентская республика.","Парламентская монархия.","Парламентское княжесто.","Парламентская республика.","Смешанная республика.","Республика."];
-var StoroniSveta = ["Восточная Европа.","Северная Европа","Западная Европа","Южная Европа."];
-var Eksport = ["Бриллианты","Нет","Табак","Техническое оборудование и транспорт.","Электроника.","Металлы и минералы.","Продовольствие.","Текстиль.","Нефтепродукты."];
+var Pravlenia = [" Абсолютная теократическая монархия"," Дуалистическая монархия"," Конституционная монархия"," Президентская республика"," Президентско-парламентская республика"," Федеративно-парламентская республика"," Парламентская монархия"," Парламентское княжесто"," Парламентская республика"," Смешанная республика"," Республика"];
+var StoroniSveta = [" Восточная Европа"," Северная Европа"," Западная Европа"," Южная Европа"];
+var Eksport = [" Бриллианты"," Нет"," Табак"," Техническое оборудование и транспорт"," Электроника"," Металлы и минералы"," Продовольствие"," Текстиль"," Нефтепродукты"];
 
 function Click(ClassName){
 	for(var i = 0;i < Countries.length; i++)
