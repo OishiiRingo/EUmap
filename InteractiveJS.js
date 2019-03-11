@@ -21,7 +21,7 @@ var UE = ["Bosnia","Vat","Ispania","Portugalia","San","Malta","Slovenia","Makedo
 var TOiT = ["Austria","Britian","Germany","Lih","Luxemburg","Monako","Netherland","France","Schweiz","Belarussia","Vengria","Poland","Slovakia","Chehia","Dania","Estonia","Schwecia","Andorra","Ispania","Italia","Malta","San","Slovenia","Horvatia"];
 var Elektronika = ["Ireland","Finland"];
 var MiM = ["Ruminia","Litva","Bosnia","Serbia","Cherno"];
-var Prod = ["Iceland","Latvia","Grecia","Portugalia"];
+var Prod = ["Iceland","Latvia","Grecia","Portugalia","Moldavia"];
 var Tekst = ["Bolgar","Albania"];
 var Neft = ["Russia","Ukraine","Norway"];
 //for fun
