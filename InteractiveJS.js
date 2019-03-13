@@ -1,4 +1,4 @@
-var Countries = ["Malta","Vat","San","Andorra","Monako","Lih","Austria","Belgium","Britian","Germany","Belarussia","Bolgar","Moldavia","Poland","Russia","Ruminia","Slovakia","Chehia","Ukraine","Dania","Iceland","Latvia","Ireland","Luxemburg","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Italia","Ispania","Grecia","Bosnia","Albania","Schwecia","Estonia","Finland","Norway","Litva","Netherland","France","Schweiz","Vengria"]; //Все страны
+var Countries = ["San","Andorra","Monako","Lih","Austria","Belgium","Britian","Germany","Belarussia","Bolgar","Moldavia","Poland","Russia","Ruminia","Slovakia","Chehia","Ukraine","Dania","Iceland","Latvia","Ireland","Luxemburg","Cherno","Horvatia","Slovenia","Serbia","Portugalia","Makedonia","Malta","Italia","Ispania","Grecia","Bosnia","Vat","Albania","Schwecia","Estonia","Finland","Norway","Litva","Netherland","France","Schweiz","Vengria"]; //Все страны
 var ATM = "Vat"; //Абсолютная теократическая монархия
 var DM = "Lih" //Дуалистическая монархия
 var KM = ["Belgium","Luxemburg","Monako","Netherland","Dania","Norway","Schwecia","Ispania"]; //Конституционная монархия
@@ -26,10 +26,9 @@ var Tekst = ["Bolgar","Albania"];
 var Neft = ["Russia","Ukraine","Norway"];
 //for fun
 var SelectedCountry = "";
-var Colors = ["#4C036E","#67E667","#FFA700","#5CCCCC","#FFFF73","#FF9640","#009999","#A64B00","#180773","#A68400","#E6399B"];
 var Pravlenia = [" Абсолютная теократическая монархия"," Дуалистическая монархия"," Конституционная монархия"," Президентская республика"," Президентско-парламентская республика"," Федеративно-парламентская республика"," Парламентская монархия"," Парламентское княжесто"," Парламентская республика"," Смешанная республика"," Республика"];
 var StoroniSveta = [" Восточная Европа"," Северная Европа"," Западная Европа"," Южная Европа"];
-var Eksport = [" Бриллианты"," Нет"," Табак"," Техническое оборудование и транспорт"," Электроника"," Металлы и минералы"," Продовольствие"," Текстиль"," Нефтепродукты"];
+var Eksport = [" Бриллианты"," Отсутствует"," Табак"," Техническое оборудование и транспорт"," Электроника"," Металлы и минералы"," Продовольствие"," Текстиль"," Нефтепродукты"];
 
 function Click(ClassName){
 	for(var i = 0;i < Countries.length; i++)
@@ -44,22 +43,22 @@ function Click(ClassName){
 				}
 				if(document.getElementById("Filter").selectedIndex == 1){
 		 			switch(Countries[i]){
-		 				case ATM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#4C036E";break;
-		 				case DM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#67E667";break;
-		 				case CheckCountry(Countries[i],KM): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FFA700";break;
-		 				case CheckCountry(Countries[i],PR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#5CCCCC";break;
-		 				case CheckCountry(Countries[i],PPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FFFF73";break;
-		 				case CheckCountry(Countries[i],FPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FF9640";break;
-		 				case PM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#009999";break;
-		 				case PK: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#A64B00";break;
+		 				case ATM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff3f76";break;
+		 				case DM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff183a";break;
+		 				case CheckCountry(Countries[i],KM): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#dc38e6";break;
+		 				case CheckCountry(Countries[i],PR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff8181";break;
+		 				case CheckCountry(Countries[i],PPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ffff73";break;
+		 				case CheckCountry(Countries[i],FPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff521e";break;
+		 				case PM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#1ebf01";break;
+		 				case PK: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ffb60a";break;
 		 				case CheckCountry(Countries[i],Par): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";break;
-		 				case SR: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#A68400";break;
-		 				case R:document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#E6399B";break;
+		 				case SR: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#00cfd9";break;
+		 				case R:document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#38c23f";break;
 		 			}	 		
 		 		}
 		 		if(document.getElementById("Filter").selectedIndex == 2){
 		 			if(EsYes.indexOf(Countries[i]) != -1){
-		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "blue";
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";
 						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
 		 			}
 		 			else
@@ -70,22 +69,22 @@ function Click(ClassName){
 		 		}
 		 		if(document.getElementById("Filter").selectedIndex == 3){
 		 			switch(Countries[i]){
-		 				case CheckCountry(Countries[i],VE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#4C036E";break;
-		 				case CheckCountry(Countries[i],SE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#67E667";break;
-		 				case CheckCountry(Countries[i],ZE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FFA700";break;
-		 				case CheckCountry(Countries[i],UE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#5CCCCC";break;
+		 				case CheckCountry(Countries[i],VE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff8181 ";break;
+		 				case CheckCountry(Countries[i],SE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773 ";break;
+		 				case CheckCountry(Countries[i],ZE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#00cfd9";break;
+		 				case CheckCountry(Countries[i],UE): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#1ebf01";break;
 		 			}	 		
 		 		}
 		 		if(document.getElementById("Filter").selectedIndex == 4){
 		 			switch(Countries[i]){
-		 				case "Belgium": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#4C036E";break;
-		 				case "Vat": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#67E667";break;
-		 				case "Makedonia": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FFA700";break;
-		 				case CheckCountry(Countries[i],TOiT): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#5CCCCC";break;
-		 				case CheckCountry(Countries[i],Elektronika): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FFFF73";break;
-		 				case CheckCountry(Countries[i],MiM): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#FF9640";break;
-		 				case CheckCountry(Countries[i],Prod): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#009999";break;
-		 				case CheckCountry(Countries[i],Tekst): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#A64B00";break;
+		 				case "Belgium": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff3f76 ";break;
+		 				case "Vat": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff8181";break;
+		 				case "Makedonia": document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#dc38e6 ";break;
+		 				case CheckCountry(Countries[i],TOiT): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#00cfd9 ";break;
+		 				case CheckCountry(Countries[i],Elektronika): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ffff73 ";break;
+		 				case CheckCountry(Countries[i],MiM): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff521e ";break;
+		 				case CheckCountry(Countries[i],Prod): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#1ebf01 ";break;
+		 				case CheckCountry(Countries[i],Tekst): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ffb60a ";break;
 		 				case CheckCountry(Countries[i],Neft): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";break;
 		 			}
 		 		}
@@ -119,7 +118,7 @@ function HoverOut(ClassName){
 function Selector(){
 
 	if(document.getElementById("Filter").selectedIndex == 0){
-		DeleteTags();
+		DeleteTags("Legend");
 		for(var i = 0;i < Countries.length; i++)
 		{
 			var Length = document.getElementsByClassName(Countries[i]).length;
@@ -131,27 +130,28 @@ function Selector(){
 	}
 
 	if(document.getElementById("Filter").selectedIndex == 1){
-		DeleteTags();
-		ChangeColor(ATM, "#4C036E");
-		ChangeColor(DM,"#67E667");
-		ChangeColor(KM,"#FFA700");
-		ChangeColor(PR,"#5CCCCC");
-		ChangeColor(PPR,"#FFFF73");
-		ChangeColor(FPR,"#FF9640");
-		ChangeColor(PM,"#009999");
-		ChangeColor(PK,"#A64B00");
+		DeleteTags("Legend");
+		ChangeColor(ATM, "#ff3f76");
+		ChangeColor(DM,"#ff183a");
+		ChangeColor(KM,"#dc38e6");
+		ChangeColor(PR,"#ff8181");
+		ChangeColor(PPR,"#ffff73");
+		ChangeColor(FPR,"#ff521e");
+		ChangeColor(PM,"#1ebf01");
+		ChangeColor(PK,"#ffb60a");
 		ChangeColor(Par,"#180773");
-		ChangeColor(SR,"#A68400");
-		ChangeColor(R,"#E6399B");
+		ChangeColor(SR,"#00cfd9");
+		ChangeColor(R,"#38c23f");
 		
+		let colors = ["ff3f76","ff183a","dc38e6","ff8181","ffff73","ff521e","1ebf01","ffb60a","180773","00cfd9","38c23f"];
+
 		for(var i = 0;i < 11;i++)
 		{
-			var IMG = document.createElement('img');
-			IMG.src = "Quads/" + i + ".png";
-			IMG.className = "i1";
-			document.getElementById("Legend").appendChild(IMG);
+			var NewDiv = document.createElement('div');
+			NewDiv.className = "d3";
+			NewDiv.style.backgroundColor = "#" + colors[i];
+			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
-			NewSpan.className = "s1";
 			NewSpan.innerHTML = Pravlenia[i] + "&nbsp&nbsp&nbsp&nbsp&nbsp";
 			if(i%2 == 1) NewSpan.innerHTML += "<br>";
 			document.getElementById("Legend").appendChild(NewSpan);
@@ -159,13 +159,13 @@ function Selector(){
 	}
 
 	if(document.getElementById("Filter").selectedIndex == 2){
-		DeleteTags();
+		DeleteTags("Legend");
 		for(var i = 0;i < Countries.length; i++)
 		{
 			var Length = document.getElementsByClassName(Countries[i]).length;
 			for(var j = 0;j < Length; j++){
 				if(EsYes.indexOf(Countries[i]) != -1){
-		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "blue";
+		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";
 						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
 		 			}
 		 			else
@@ -175,56 +175,54 @@ function Selector(){
 		 			}
 			}	
 		}
-			var IMG = document.createElement('img');
-			IMG.src = "Quads/8.png";
-			IMG.className = "i2";
-			document.getElementById("Legend").appendChild(IMG);
+			var NewDiv = document.createElement('div');
+			NewDiv.className = "d3";
+			NewDiv.style.backgroundColor = "#180773";
+			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
-			NewSpan.className = "s2";
-			NewSpan.innerHTML = "Страны входящие в Евросоюз";
+			NewSpan.innerHTML = " Страны входящие в Евросоюз";
 			document.getElementById("Legend").appendChild(NewSpan);
 	}
 
 	if(document.getElementById("Filter").selectedIndex == 3){	
-		DeleteTags();	
-		ChangeColor(VE, "#4C036E");
-		ChangeColor(SE,"#67E667");
-		ChangeColor(ZE,"#FFA700");
-		ChangeColor(UE,"#5CCCCC");
+		DeleteTags("Legend");	
+		let colors = ["ff8181","180773","00cfd9","1ebf01"]
+		ChangeColor(VE, "#ff8181");
+		ChangeColor(SE,"#180773");
+		ChangeColor(ZE,"#00cfd9");
+		ChangeColor(UE,"#1ebf01");
 
 		for(var i = 0;i < 4;i++)
 		{
-			var IMG = document.createElement('img');
-			IMG.src = "Quads/" + i + ".png";
-			IMG.className = "i3";
-			document.getElementById("Legend").appendChild(IMG);
+			var NewDiv = document.createElement('div');
+			NewDiv.className = "d3";
+			NewDiv.style.backgroundColor = "#" + colors[i];
+			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
-			NewSpan.className = "s3";
 			NewSpan.innerHTML = StoroniSveta[i] + "<br>";
 			document.getElementById("Legend").appendChild(NewSpan);
 		}
 	}
 
 	if(document.getElementById("Filter").selectedIndex == 4){
-		DeleteTags();
-		ChangeColor("Belgium", "#4C036E");
-		ChangeColor("Vat","#67E667");
-		ChangeColor("Makedonia","#FFA700");
-		ChangeColor(TOiT,"#5CCCCC");
-		ChangeColor(Elektronika,"#FFFF73");
-		ChangeColor(MiM,"#FF9640");
-		ChangeColor(Prod,"#009999");
-		ChangeColor(Tekst,"#A64B00");
+		DeleteTags("Legend");
+		ChangeColor("Belgium", "#ff3f76");
+		ChangeColor("Vat","#ff8181");
+		ChangeColor("Makedonia","#dc38e6");
+		ChangeColor(TOiT,"#00cfd9");
+		ChangeColor(Elektronika,"#ffff73");
+		ChangeColor(MiM,"#ff521e");
+		ChangeColor(Prod,"#1ebf01");
+		ChangeColor(Tekst,"#ffb60a");
 		ChangeColor(Neft,"#180773");
-
+		let colors = ["ff3f76","ff8181","dc38e6","00cfd9","ffff73","ff521e","1ebf01","ffb60a","180773"];
 		for(var i = 0;i < 9;i++)
 		{
-			var IMG = document.createElement('img');
-			IMG.src = "Quads/" + i + ".png";
-			IMG.className = "i4";
-			document.getElementById("Legend").appendChild(IMG);
+			var NewDiv = document.createElement('div');
+			NewDiv.className = "d3";
+			NewDiv.style.backgroundColor = "#" + colors[i];
+			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
-			NewSpan.className = "s4";
 			NewSpan.innerHTML = Eksport[i] + "&nbsp&nbsp&nbsp&nbsp&nbsp";
 			if(i%2 == 1) NewSpan.innerHTML += "<br>";
 			document.getElementById("Legend").appendChild(NewSpan);
@@ -269,9 +267,65 @@ function CheckCountry(CountryName, Massive){
 }
 
 
-function DeleteTags(){
-	var tmp = document.getElementById("Legend");
+function DeleteTags(tagName){
+	var tmp = document.getElementById(tagName);
 	while (tmp.firstChild) {
     tmp.removeChild(tmp.firstChild);
+	}
+}
+
+function SearchCountry(){
+	var Name = document.getElementById("search").value.toLowerCase();
+}
+
+var isCyrillic = function (text) {
+    return /[а-я]/i.test(text);
+}
+
+var countriesRus = ["Австрия","Бельгия","Великобританя","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды","Франция","Швейцария","Беларусь","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Чехия","Украина","Дания","Исландия","Латвия","Литва","Норвегия","Финляндия","Эстония","Швеция","Албания","Андорра","Босния и Герцеговина","Ватикан","Греция","Испания","Италия","Македония","Мальта","Португалия","Сан-Марино","Сербия","Словения","Хорватия","Черногория"];
+var countriesEng = ["Austria","Belgium","Great Britian","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovin","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","Cas-Marino","Serbia","Slovenia","Croatia","Montenegro"];
+
+function CreateOption(){
+	DeleteTags("netfantazii");
+	var string = document.getElementById("search").value.toLowerCase();
+	for(var j = 0;j < countriesEng.length;j++){
+		var addThis = 1;
+		if(document.getElementById("search").value.length == 0){
+			addThis = 0;
+		}
+		if(document.getElementById("search").value.length <= countriesEng[j].length || document.getElementById("search").value.length <= countriesRus[j].length){
+			var tmp1 = countriesEng[j].toLowerCase()
+			var tmp2 = countriesRus[j].toLowerCase()
+		for(var i = 0;i < document.getElementById("search").value.length;i++){
+			if(!isCyrillic(string)){	
+				if(string[i] != tmp1[i])
+					addThis = 0;
+			}
+			else
+			{
+				if(string[i] != tmp2[i])
+					addThis = 0;
+			}
+		}
+		}
+		else
+		{
+			addThis = 0;
+		}
+		if(addThis == 1)
+		{	
+			var newOption = document.createElement("option");
+			if(isCyrillic(string)){	
+				newOption.value = countriesRus[j];
+				newOption.innerHTML = countriesEng[j];
+			}
+			else
+			{
+				newOption.value = countriesEng[j];
+				newOption.innerHTML = countriesRus[j];
+			}
+			
+			document.getElementById("netfantazii").appendChild(newOption);
+		}
 	}
 }

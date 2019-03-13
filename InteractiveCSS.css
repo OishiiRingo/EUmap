@@ -6,13 +6,15 @@ svg{
 	width: 100%;
 }
 
-.Eumap{
-	position: fixed;
-	left: 0;
-	top: 0;
+/*.EUmap{
 	height: 100%;
 	width: 100%;
 }
+
+.Countries{
+	height: 100%;
+	width: 100%;
+}*/
 
 .Malta_default,.Vat_default,.San_default,.Monako_default,.Andorra_default,.Lih_default,.Austria_default,.Belgium_default,.Britian_default,.Germany_default,.Belarussia_default,.Bolgar_default,.Moldavia_default,.Poland_default,.Russia_default,.Ruminia_default,.Slovakia_default,.Chehia_default,.Ukraine_default,.Dania_default,.Iceland_default,.Latvia_default,.Ireland_default,.Luxemburg_default,.Cherno_default,.Horvatia_default,.Slovenia_default,.Serbia_default,.Portugalia_default,.Makedonia_default,.Italia_default,.Ispania_default,.Grecia_default,.Bosnia_default,.Albania_default,.Schwecia_default,.Estonia_default,.Finland_default,.Norway_default,.Litva_default,.Netherland_default,.France_default,.Schweiz_default,.Vengria_default{
 	opacity: 0;
@@ -27,4 +29,10 @@ svg{
 
 .Malta_animation,.Vat_animation,.San_animation,.Monako_animation,.Andorra_animation,.Lih_animation,.Austria_animation,.Belgium_animation,.Britian_animation,.Germany_animation,.Belarussia_animation,.Bolgar_animation,.Moldavia_animation,.Poland_animation,.Russia_animation,.Ruminia_animation,.Slovakia_animation,.Chehia_animation,.Ukraine_animation,.Dania_animation,.Iceland_animation,.Latvia_animation,.Ireland_animation,.Luxemburg_animation,.Cherno_animation,.Horvatia_animation,.Slovenia_animation,.Serbia_animation,.Portugalia_animation,.Makedonia_animation,.Italia_animation,.Ispania_animation,.Grecia_animation,.Bosnia_animation,.Albania_animation,.Schwecia_animation,.Estonia_animation,.Finland_animation,.Norway_animation,.Litva_animation,.Netherland_animation,.France_animation,.Schweiz_animation,.Vengria_animation{
 	animation: Change 0.7s ease-in infinite;
+}
+
+.d3{
+	height: 10px;
+	width: 10px;
+	display:inline-block;
 }

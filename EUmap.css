@@ -90,7 +90,7 @@ header{
 	font-weight:bold;
 	color:#dcdcdc;
 	background:#24292d;
-	margin-left:300px;
+	margin-left:500px;
 }
 
 .registr:hover{
@@ -153,7 +153,7 @@ hr{
 
 .map{
     position: absolute;
-    margin-left: 60px;
+    margin-left:60px;
 }
 
 .body{
@@ -208,3 +208,4 @@ footer{
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	color: white;
 }
+
