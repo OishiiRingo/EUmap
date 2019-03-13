@@ -276,6 +276,15 @@ function DeleteTags(tagName){
 
 function SearchCountry(){
 	var Name = document.getElementById("search").value.toLowerCase();
+	for(var i = 0;i < 44;i++)
+	{
+		if(Name == countriesRus[i] || countriesEng[i])
+			Click(Name);
+	}
+	if(Name == "Great Britan")
+			Click("Britain");
+	if(Name == "Босния и Герцеговина" || Name == "Bosnia and Herzegovin")
+			Click("Bosnia");
 }
 
 var isCyrillic = function (text) {
@@ -283,7 +292,7 @@ var isCyrillic = function (text) {
 }
 
 var countriesRus = ["Австрия","Бельгия","Великобританя","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды","Франция","Швейцария","Беларусь","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Чехия","Украина","Дания","Исландия","Латвия","Литва","Норвегия","Финляндия","Эстония","Швеция","Албания","Андорра","Босния и Герцеговина","Ватикан","Греция","Испания","Италия","Македония","Мальта","Португалия","Сан-Марино","Сербия","Словения","Хорватия","Черногория"];
-var countriesEng = ["Austria","Belgium","Great Britian","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovin","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","Cas-Marino","Serbia","Slovenia","Croatia","Montenegro"];
+var countriesEng = ["Austria","Belgium","Great Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovin","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","Cas-Marino","Serbia","Slovenia","Croatia","Montenegro"];
 
 function CreateOption(){
 	DeleteTags("netfantazii");
