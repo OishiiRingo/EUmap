@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 var Countries = ["Austria","Belgium","Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia","Vaticanican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
+=======
+var Countries = ["San-Marino","Andorra","Monako","Liechtenstein","Austria","Belgium","Britain","Germany","Belarus","Bulgaria","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Ireland","Luxembourg","Montenegro","Croatia","Slovenia","Serbia","Portugal","Macedonia","Malta","Italy","Spain","Greece","Bosnia","Vatican","Albania","Sweden","Estonia","Finland","Norway","Lithuania","Netherlands","France","Switzerland","Hungary"]; //Все страны
+>>>>>>> 18cbfe15077fd1aa7ed2fcd698479edf1a867f63
 var ATM = "Vatican"; //Абсолютная теократическая монархия
 var DM = "Liechtenstein" //Дуалистическая монархия
 var KM = ["Belgium","Luxembourg","Monako","Netherlands","Denmark","Norway","Sweden","Spain"]; //Конституционная монархия
@@ -277,8 +281,13 @@ function SearchCountry(){
 	var Name = document.getElementById("search").value.toLowerCase();
 	for(var i = 0;i < 44;i++)
 	{
+<<<<<<< HEAD
 		if(Name == countriesRus[i].toLowerCase() || Name == countriesEng[i].toLowerCase())
 			Click(countriesEng[i]);
+=======
+		if(Name == countriesRus[i] || countriesEng[i])
+			Click(Name);
+>>>>>>> 18cbfe15077fd1aa7ed2fcd698479edf1a867f63
 	}
 	if(Name == "Great Britain".toLowerCase())
 			Click("Britain");
@@ -291,17 +300,18 @@ var isCyrillic = function (text) {
 }
 
 var countriesRus = ["Австрия","Бельгия","Великобритания","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды","Франция","Швейцария","Беларусь","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Чехия","Украина","Дания","Исландия","Латвия","Литва","Норвегия","Финляндия","Эстония","Швеция","Албания","Андорра","Босния и Герцеговина","Ватикан","Греция","Испания","Италия","Македония","Мальта","Португалия","Сан-Марино","Сербия","Словения","Хорватия","Черногория"];
+var countriesEng = ["Austria","Belgium","Great Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovina","Vaticanican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"];
 
 function CreateOption(){
 	DeleteTags("netfantazii");
 	var string = document.getElementById("search").value.toLowerCase();
-	for(var j = 0;j < Countries.length;j++){
+	for(var j = 0;j < countriesEng.length;j++){
 		var addThis = 1;
 		if(document.getElementById("search").value.length == 0){
 			addThis = 0;
 		}
-		if(document.getElementById("search").value.length <= Countries[j].length || document.getElementById("search").value.length <= countriesRus[j].length){
-			var tmp1 = Countries[j].toLowerCase()
+		if(document.getElementById("search").value.length <= countriesEng[j].length || document.getElementById("search").value.length <= countriesRus[j].length){
+			var tmp1 = countriesEng[j].toLowerCase()
 			var tmp2 = countriesRus[j].toLowerCase()
 			for(var i = 0;i < document.getElementById("search").value.length;i++){
 				if(!isCyrillic(string)){	
@@ -324,11 +334,11 @@ function CreateOption(){
 			var newOption = document.createElement("option");
 			if(isCyrillic(string)){	
 				newOption.value = countriesRus[j];
-				newOption.innerHTML = Countries[j];
+				newOption.innerHTML = countriesEng[j];
 			}
 			else
 			{
-				newOption.value = Countries[j];
+				newOption.value = countriesEng[j];
 				newOption.innerHTML = countriesRus[j];
 			}
 			
