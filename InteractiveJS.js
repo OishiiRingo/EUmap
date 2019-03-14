@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-var Countries = ["Austria","Belgium","Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia","Vaticanican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
-=======
-var Countries = ["San-Marino","Andorra","Monako","Liechtenstein","Austria","Belgium","Britain","Germany","Belarus","Bulgaria","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Ireland","Luxembourg","Montenegro","Croatia","Slovenia","Serbia","Portugal","Macedonia","Malta","Italy","Spain","Greece","Bosnia","Vatican","Albania","Sweden","Estonia","Finland","Norway","Lithuania","Netherlands","France","Switzerland","Hungary"]; //Все страны
->>>>>>> 18cbfe15077fd1aa7ed2fcd698479edf1a867f63
+
+var Countries = ["Austria","Belgium","Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
 var ATM = "Vatican"; //Абсолютная теократическая монархия
 var DM = "Liechtenstein" //Дуалистическая монархия
 var KM = ["Belgium","Luxembourg","Monako","Netherlands","Denmark","Norway","Sweden","Spain"]; //Конституционная монархия
@@ -63,7 +60,7 @@ function Click(ClassName){
 		 		if(document.getElementById("Filter").selectedIndex == 2){
 		 			if(EsYes.indexOf(Countries[i]) != -1){
 		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";
-						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.75;
 		 			}
 		 			else
 		 			{
@@ -100,7 +97,7 @@ function Click(ClassName){
 	var Length = document.getElementsByClassName(ClassName).length;
 	for(var i = 0;i < Length; i++){
 		document.getElementsByClassName(ClassName + "_default")[i].style.fill = "white";
-		document.getElementsByClassName(ClassName + "_default")[i].style.opacity = 0.8;
+		document.getElementsByClassName(ClassName + "_default")[i].style.opacity = 0.75;
 		}	
 	SelectedCountry = ClassName;
 }
@@ -170,7 +167,7 @@ function Selector(){
 			for(var j = 0;j < Length; j++){
 				if(EsYes.indexOf(Countries[i]) != -1){
 		 				document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#180773";
-						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.8;
+						document.getElementsByClassName(Countries[i] + "_default")[j].style.opacity = 0.75;
 		 			}
 		 			else
 		 			{
@@ -235,7 +232,7 @@ function Selector(){
 
 	for(var i =0;i < SelectedCountry.length;i++){
 		document.getElementsByClassName(SelectedCountry)[i].style.fill = "white";
-		document.getElementsByClassName(SelectedCountry)[i].style.opacity = 0.8;
+		document.getElementsByClassName(SelectedCountry)[i].style.opacity = 0.75;
 	}
 }
 
@@ -247,7 +244,7 @@ function ChangeColor(prName, colorName){
 			var Length = document.getElementsByClassName(prName[i]).length;
 			for(var j = 0;j < Length; j++){
 				document.getElementsByClassName(prName[i] + "_default")[j].style.fill = colorName;
-				document.getElementsByClassName(prName[i] + "_default")[j].style.opacity = 0.8;
+				document.getElementsByClassName(prName[i] + "_default")[j].style.opacity = 0.75;
 			}	
 		}
 	}
@@ -256,7 +253,7 @@ function ChangeColor(prName, colorName){
 		var Length = document.getElementsByClassName(prName).length;
 		for(var j = 0;j < Length; j++){
 		document.getElementsByClassName(prName + "_default")[j].style.fill = colorName;
-		document.getElementsByClassName(prName + "_default")[j].style.opacity = 0.8;}
+		document.getElementsByClassName(prName + "_default")[j].style.opacity = 0.75;}
 	}
 }
 
@@ -281,15 +278,10 @@ function SearchCountry(){
 	var Name = document.getElementById("search").value.toLowerCase();
 	for(var i = 0;i < 44;i++)
 	{
-<<<<<<< HEAD
 		if(Name == countriesRus[i].toLowerCase() || Name == countriesEng[i].toLowerCase())
 			Click(countriesEng[i]);
-=======
-		if(Name == countriesRus[i] || countriesEng[i])
-			Click(Name);
->>>>>>> 18cbfe15077fd1aa7ed2fcd698479edf1a867f63
 	}
-	if(Name == "Great Britain".toLowerCase())
+	if(Name == "Great Britain".toLowerCase() || Name == "Великобритания".toLowerCase())
 			Click("Britain");
 	if(Name == "Босния и Герцеговина".toLowerCase() || Name == "Bosnia and Herzegovina".toLowerCase())
 			Click("Bosnia");
@@ -300,7 +292,7 @@ var isCyrillic = function (text) {
 }
 
 var countriesRus = ["Австрия","Бельгия","Великобритания","Германия","Ирландия","Лихтенштейн","Люксембург","Монако","Нидерланды","Франция","Швейцария","Беларусь","Болгария","Венгрия","Молдавия","Польша","Россия","Румыния","Словакия","Чехия","Украина","Дания","Исландия","Латвия","Литва","Норвегия","Финляндия","Эстония","Швеция","Албания","Андорра","Босния и Герцеговина","Ватикан","Греция","Испания","Италия","Македония","Мальта","Португалия","Сан-Марино","Сербия","Словения","Хорватия","Черногория"];
-var countriesEng = ["Austria","Belgium","Great Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovina","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"];
+var countriesEng = ["Austria","Belgium","Great Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovina","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"];
 
 function CreateOption(){
 	DeleteTags("netfantazii");
