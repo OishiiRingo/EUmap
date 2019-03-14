@@ -16,18 +16,10 @@
 					<button type="submit" id="Main" class="main_page" >Главная</button>
 				</form>
 			</div>
-		
+			
 			<div class ="head">
-				<input type="search" name="search" placeholder="Поиск..." class="search">
-				<select>
-					<option>Название страны</option>
-					<option>Название города</option>
-					<option>Географическое положение</option>
-					<option>Валюта</option>
-					<option>Место в мире</option>
-					<option>Место в Европе</option>
-				</select>
-				<input type="submit" value="Найти" class="submit">
+				<input list = "netfantazii" type = "text" id="search" placeholder="Название страны..." class="search" onkeyup = "CreateOption()"><datalist id = "netfantazii"></datalist>
+				<input type="submit" value="Найти" class="submit" onclick="SearchCountry()">
 			</div>
 		
 			<div class="head">
