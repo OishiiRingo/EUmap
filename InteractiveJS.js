@@ -1,4 +1,4 @@
-var Countries = ["Austria","Belgium","Great Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia and Herzegovina","Vaticanican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
+var Countries = ["Austria","Belgium","Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlandss","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia","Vaticanican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
 var ATM = "Vatican"; //Абсолютная теократическая монархия
 var DM = "Liechtenstein" //Дуалистическая монархия
 var KM = ["Belgium","Luxembourg","Monako","Netherlands","Denmark","Norway","Sweden","Spain"]; //Конституционная монархия
@@ -277,12 +277,12 @@ function SearchCountry(){
 	var Name = document.getElementById("search").value.toLowerCase();
 	for(var i = 0;i < 44;i++)
 	{
-		if(Name == countriesRus[i] || Countries[i])
-			Click(Name);
+		if(Name == countriesRus[i].toLowerCase() || Name == countriesEng[i].toLowerCase())
+			Click(countriesEng[i]);
 	}
-	if(Name == "Great Britain")
+	if(Name == "Great Britain".toLowerCase())
 			Click("Britain");
-	if(Name == "Босния и Герцеговина" || Name == "Bosnia and Herzegovina")
+	if(Name == "Босния и Герцеговина".toLowerCase() || Name == "Bosnia and Herzegovina".toLowerCase())
 			Click("Bosnia");
 }
 
