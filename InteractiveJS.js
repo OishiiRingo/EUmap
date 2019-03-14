@@ -51,7 +51,7 @@ function Click(ClassName){
 		 				case CheckCountry(Countries[i],PPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#0099ff";break;
 		 				case CheckCountry(Countries[i],FPR): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#80ccff";break;
 		 				case PM: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff4400";break;
-		 				case PK: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff5500";break;
+		 				case PK: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#ff12f8";break;
 		 				case CheckCountry(Countries[i],Par): document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#2a0080";break;
 		 				case SR: document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#5500ff";break;
 		 				case R:document.getElementsByClassName(Countries[i] + "_default")[j].style.fill = "#aa80ff";break;
@@ -139,12 +139,12 @@ function Selector(){
 		ChangeColor(PPR,"#0099ff");
 		ChangeColor(FPR,"#80ccff");
 		ChangeColor(PM,"#ff4400");
-		ChangeColor(PK,"#ff5500");
+		ChangeColor(PK,"#ff12f8");
 		ChangeColor(Par,"#2a0080");
 		ChangeColor(SR,"#5500ff");
 		ChangeColor(R,"#aa80ff");
 		
-		let colors = ["800000","ff0000","ff8080","004d80","0099ff","80ccff","ff4400","ff5500","2a0080","5500ff","aa80ff"];
+		let colors = ["800000","ff0000","ff8080","004d80","0099ff","80ccff","ff4400","ff12f8","2a0080","5500ff","aa80ff"];
 
 		for(var i = 0;i < 11;i++)
 		{

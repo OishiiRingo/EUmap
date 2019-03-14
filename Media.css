@@ -1,0 +1,524 @@
+@media only screen and (max-width: 1920px){   
+	body{
+		width:1890px;
+		}
+	
+	header{
+		width:1845px;
+		background-color:#e6e6e6;
+	}
+	
+	.search{
+		margin-left:300px;
+	}
+	
+	.registr{
+		margin-left:500px;
+	}	
+	
+	.vertical{
+		height: 1020px;
+		margin-left: 1125px;
+	}
+	
+	.info{
+		margin-left: 1200px;
+		width:550px;
+	}
+
+	hr{
+		width: 1885px;
+	}
+	
+	.EUmap{
+		width: 1025px;
+	}
+}
+
+@media only screen and (max-width: 1680px){   
+	body{
+		width:1650px;
+		}
+	
+	header{
+		width:1605px;
+	}
+	
+	.search{
+		margin-left:200px;
+	}
+	
+	.registr{
+		margin-left:400px;
+	}
+	
+	.vertical{
+		height: 920px;
+		margin-left: 1025px;
+	}
+	
+	.info{
+		margin-left: 1100px;
+		width:500px;
+	}
+
+	hr{
+		width: 1640px;
+	}
+	
+	.EUmap{
+		width: 925px;
+	}
+}
+
+@media only screen and (max-width: 1600px){   
+	body{
+		width:1570px;
+		}
+	
+	header{
+		width:1545px;
+	}
+	
+	.search{
+		margin-left:200px;
+	}
+	
+	.registr{
+		margin-left:320px;
+	}
+	
+	.vertical{
+		height: 880px;
+		margin-left: 985px;
+	}
+	
+	.info{
+		margin-left: 1040px;
+		width:460px;
+	}
+
+	hr{
+		width: 1560px;
+	}
+	
+	.EUmap{
+		width: 885px;
+	}
+}
+
+@media only screen and (max-width: 1536px){   
+	body{
+		width:1506px;
+		}
+	
+	header{
+		width:1481px;
+	}
+	
+	.search{
+		margin-left:200px;
+	}
+	
+	.registr{
+		margin-left:320px;
+	}
+	
+	.vertical{
+		height: 880px;
+		margin-left: 985px;
+	}
+	
+	.info{
+		margin-left: 1040px;
+		width:460px;
+	}
+
+	hr{
+		width: 1500px;
+	}
+	
+	.EUmap{
+		width: 885px;
+	}
+}
+
+@media only screen and (max-width: 1440px){   
+	body{
+		width:1410px;
+		}
+	
+	header{
+		width:1385px;
+	}
+	
+	.search{
+		margin-left:180px;
+	}
+	
+	.registr{
+		margin-left:260px;
+	}
+	
+	.vertical{
+		height: 795px;
+		margin-left: 900px;
+	}
+	
+	.info{
+		margin-left: 940px;
+		width:460px;
+	}
+
+	hr{
+		width: 1400px;
+	}
+	
+	.EUmap{
+		width: 805px;
+	}
+}
+
+@media only screen and (max-width: 1400px){   
+	body{
+		width:1370px;
+		}
+	
+	header{
+		width:1345px;
+	}
+	
+	.search{
+		margin-left:170px;
+	}
+	
+	.registr{
+		margin-left:230px;
+	}
+	
+	.vertical{
+		height: 790px;
+		margin-left: 895px;
+	}
+	
+	.info{
+		margin-left: 935px;
+		width:420px;
+	}
+
+	hr{
+		width: 1360px;
+	}
+	
+	.EUmap{
+		width: 800px;
+	}
+}
+
+@media only screen and (max-width: 1280px){   
+	body{
+		width:1250px;
+		}
+	
+	header{
+		width:1222px;
+	}
+	
+	.search{
+		margin-left:100px;
+	}
+	
+	.registr{
+		margin-left:170px;
+	}
+	
+	.vertical{
+		height: 660px;
+		margin-left: 765px;
+	}
+	
+	.info{
+		margin-left: 805px;
+		width:410px;
+	}
+
+	hr{
+		width: 1260px;
+	}
+	
+	.EUmap{
+		width: 675px;
+	}
+}
+
+@media only screen and (max-width: 1200px){   
+	body{
+		width:1170px;
+		}
+	
+	header{
+		width:1145px;
+	}
+	
+	.search{
+		margin-left:90px;
+	}
+	
+	.registr{
+		margin-left:160px;
+	}
+	
+	.login{
+		margin-left:10px;
+	}
+	
+	.vertical{
+		height: 640px;
+		margin-left: 745px;
+	}
+	
+	.info{
+		margin-left: 795px;
+		width:350px;
+	}
+
+	hr{
+		width: 1180px;
+	}
+	
+	.EUmap{
+		width: 655px;
+	}
+}
+
+@media only screen and (max-width: 1024px){   
+	body{
+		width:996px;
+		}
+	
+	header{
+		width:971px;
+	}
+	
+	.search{
+		margin-left:55px;
+	}
+	
+	.registr{
+		margin-left:50px;
+	}
+	
+	.login{
+		margin-left:10px;
+	}
+	
+	.vertical{
+		height: 520px;
+		margin-left: 625px;
+	}
+	
+	.info{
+		margin-left: 665px;
+		width:320px;
+	}
+
+	hr{
+		width: 1000px;
+	}
+	
+	.EUmap{
+		width: 540px;
+	}
+}
+
+@media only screen and (max-width: 960px){   
+	body{
+		width:930px;
+		margin-top:130px;
+		}
+	
+	header{
+		width:905px;
+		height:90px;
+	}
+	
+	.search{
+		margin-left:70px;
+	}
+	
+	.registr{
+		margin-left:60px;
+	}
+	
+	.login{
+		margin-left:679px;
+		margin-top:10px;
+	}
+	
+	.vertical{
+		height: 510px;
+		margin-left: 645px;
+	}
+	
+	.info{
+		margin-left: 675px;
+		width:220px;
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	hr{
+		width: 940px;
+	}
+	
+	.EUmap{
+		width: 540px;
+	}
+}
+
+@media only screen and (max-width: 854px){   
+	body{
+		width:824px;
+		margin-top:130px;
+		}
+	
+	header{
+		width:795px;
+		height:90px;
+	}
+	
+	.search{
+		margin-left:40px;
+	}
+	
+	.registr{
+		margin-left:40px;
+	}
+	
+	.login{
+		margin-left:629px;
+		margin-top:10px;
+	}
+	
+	.vertical{
+		height: 470px;
+		margin-left: 604px;
+	}
+	
+	.info{
+		margin-left: 625px;
+		width:200px;
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	hr{
+		width: 940px;
+	}
+	
+	.EUmap{
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 800px){   
+	body{
+		width:770px;
+		margin-top:130px;
+		}
+	
+	header{
+		width:745px;
+		height:90px;
+	}
+	
+	.search{
+		margin-left:10px;
+	}
+	
+	.registr{
+		margin-left:50px;
+	}
+	
+	.login{
+		margin-left:589px;
+		margin-top:10px;
+	}
+	
+	.vertical{
+		height: 450px;
+		margin-left: 584px;
+	}
+	
+	.info{
+		margin-left: 605px;
+		width:140px;
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	hr{
+		width: 760px;
+	}
+	
+	.EUmap{
+		width: 500px;
+	}
+
+	.filter{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	select{ 
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	.main_page{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.main_page:hover{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	 
+	.main_page:active{
+		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.search{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.submit{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.submit:hover{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	.submit:active{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.registr{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.registr:hover{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	.registr:active{
+		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.login{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.login:hover{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	 
+	.login:active{
+		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+}
