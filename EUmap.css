@@ -169,8 +169,10 @@ hr{
 
 .Legend{
 	position: absolute;
-	margin-top: 97px;
-	margin-left: 40px;
+	margin-top: 60px;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: lightgray;
+	margin-left:1200px;
 }
 
 .filter{
@@ -181,7 +183,7 @@ hr{
 .info{
 	position: absolute;
 	margin-left: 1200px;
-	margin-top: 40px;
+	margin-top: 280px;
 	color: lightgray;
 	line-height: 0.5;
 	font:16px "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -203,15 +205,14 @@ footer{
 	color: lightgray;
 }
 
-.WhitePower{
-	position: absolute;
-	margin-top: 80px;
-	margin-left: 40px;
-	color:white;
+.text_select_country{
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-.Legend{
-	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color: white;
+.WhitePower{
+	position: absolute;
+	margin-top: 30px;
+	margin-left: 1200px;
+	color:lightgray;
 }
 

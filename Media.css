@@ -69,6 +69,14 @@
 	.EUmap{
 		width: 925px;
 	}
+
+	.WhitePower{
+		margin-left: 1100px;
+	}
+	
+	.Legend{
+		margin-left: 1100px;
+	}
 }
 
 @media only screen and (max-width: 1600px){   
@@ -104,6 +112,14 @@
 	
 	.EUmap{
 		width: 885px;
+	}
+
+	.WhitePower{
+		margin-left: 1040px;
+	}
+	
+	.Legend{
+		margin-left: 1040px;
 	}
 }
 
@@ -177,6 +193,14 @@
 	.EUmap{
 		width: 805px;
 	}
+
+	.WhitePower{
+		margin-left: 940px;
+	}
+	
+	.Legend{
+		margin-left: 940px;
+	}
 }
 
 @media only screen and (max-width: 1400px){   
@@ -213,6 +237,14 @@
 	.EUmap{
 		width: 800px;
 	}
+
+	.WhitePower{
+		margin-left: 935px;
+	}
+	
+	.Legend{
+		margin-left: 935px;
+	}
 }
 
 @media only screen and (max-width: 1280px){   
@@ -243,11 +275,19 @@
 	}
 
 	hr{
-		width: 1260px;
+		width: 1240px;
 	}
 	
 	.EUmap{
 		width: 675px;
+	}
+
+	.WhitePower{
+		margin-left: 810px;
+	}
+	
+	.Legend{
+		margin-left: 810px;
 	}
 }
 
@@ -280,6 +320,7 @@
 	.info{
 		margin-left: 795px;
 		width:350px;
+		font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
 
 	hr{
@@ -288,6 +329,48 @@
 	
 	.EUmap{
 		width: 655px;
+	}
+
+	.WhitePower{
+		margin-left: 800px;
+	}
+	
+	.Legend{
+		margin-left: 800px;
+	}	
+}
+
+@media only screen and (max-width: 1110px){
+	.info{
+		margin-left: 795px;
+		margin-top:300px;
+		width:350px;
+	}	
+	
+	.WhitePower{
+		margin-left: 800px;
+	}
+	
+	.Legend{
+		margin-left: 800px;
+	}
+}
+
+@media only screen and (max-width: 1040px){
+	.info{
+		margin-left: 795px;
+		margin-top:300px;
+		width:350px;
+		font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}	
+	
+	.WhitePower{
+		margin-left: 800px;
+	}
+	
+	.Legend{
+		margin-left: 800px;
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
 }
 
@@ -320,14 +403,38 @@
 	.info{
 		margin-left: 665px;
 		width:320px;
+		margin-top:230px;
 	}
 
 	hr{
-		width: 1000px;
+		width: 970px;
 	}
 	
 	.EUmap{
 		width: 540px;
+	}
+	
+	.WhitePower{
+		margin-left: 670px;
+	}
+	
+	.Legend{
+		margin-left: 670px;
+	}
+}
+
+@media only screen and (max-width: 975px){   
+	.Legend{
+		margin-left: 670px;
+		font:11px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+
+	.text_select_country{
+		font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	.info{
+		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
 }
 
@@ -367,158 +474,20 @@
 	}
 
 	hr{
-		width: 940px;
+		width: 920px;
 	}
 	
 	.EUmap{
 		width: 540px;
 	}
-}
-
-@media only screen and (max-width: 854px){   
-	body{
-		width:824px;
-		margin-top:130px;
-		}
 	
-	header{
-		width:795px;
-		height:90px;
+	.WhitePower{
+		margin-left: 680px;
 	}
 	
-	.search{
-		margin-left:40px;
-	}
-	
-	.registr{
-		margin-left:40px;
-	}
-	
-	.login{
-		margin-left:629px;
-		margin-top:10px;
-	}
-	
-	.vertical{
-		height: 470px;
-		margin-left: 604px;
-	}
-	
-	.info{
-		margin-left: 625px;
-		width:200px;
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	hr{
-		width: 940px;
-	}
-	
-	.EUmap{
-		width: 500px;
-	}
-}
-
-@media only screen and (max-width: 800px){   
-	body{
-		width:770px;
-		margin-top:130px;
-		}
-	
-	header{
-		width:745px;
-		height:90px;
-	}
-	
-	.search{
-		margin-left:10px;
-	}
-	
-	.registr{
-		margin-left:50px;
-	}
-	
-	.login{
-		margin-left:589px;
-		margin-top:10px;
-	}
-	
-	.vertical{
-		height: 450px;
-		margin-left: 584px;
-	}
-	
-	.info{
-		margin-left: 605px;
-		width:140px;
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	hr{
-		width: 760px;
-	}
-	
-	.EUmap{
-		width: 500px;
-	}
-
-	.filter{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	
-	select{ 
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	
-	.main_page{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.main_page:hover{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	 
-	.main_page:active{
-		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.search{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.submit{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.submit:hover{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	
-	.submit:active{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.registr{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.registr:hover{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	
-	.registr:active{
-		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.login{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-
-	.login:hover{
-		font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	}
-	 
-	.login:active{
-		font:13x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	.Legend{
+		margin-left: 680px;
+		font:12px "Trebuchet MS", Arial, Helvetica, sans-serif;
+		width:300px;
 	}
 }

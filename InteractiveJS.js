@@ -154,7 +154,7 @@ function Selector(){
 			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
 			NewSpan.innerHTML = Pravlenia[i] + "&nbsp&nbsp&nbsp&nbsp&nbsp";
-			if(i%2 == 1) NewSpan.innerHTML += "<br>";
+			NewSpan.innerHTML += "<br>";
 			document.getElementById("Legend").appendChild(NewSpan);
 		}
 	}
@@ -225,7 +225,7 @@ function Selector(){
 			document.getElementById("Legend").appendChild(NewDiv);
 			var NewSpan = document.createElement('span');
 			NewSpan.innerHTML = Eksport[i] + "&nbsp&nbsp&nbsp&nbsp&nbsp";
-			if(i%2 == 1) NewSpan.innerHTML += "<br>";
+			NewSpan.innerHTML += "<br>";
 			document.getElementById("Legend").appendChild(NewSpan);
 		}
 	}
