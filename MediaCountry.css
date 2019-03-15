@@ -217,6 +217,51 @@
 	}
 }
 
+
+@media only screen and (max-width: 1366px){   
+	body{
+		width:1350px;
+	}
+	
+	header{
+		width:1345px;
+	}
+	
+	.search{
+		margin-left:170px;
+	}
+	
+	.registr{
+		margin-left:230px;
+	}
+	
+	.vertical{
+		height: 790px;
+		margin-left: 895px;
+	}
+	
+	.info{
+		margin-left: 935px;
+		width:400px;
+	}
+
+	hr{
+		width: 1320px;
+	}
+	
+	.EUmap{
+		width: 800px;
+	}
+
+	.WhitePower{
+		margin-left: 935px;
+	}
+	
+	.Legend{
+		margin-left: 935px;
+	}
+}
+
 @media only screen and (max-width: 1280px){   
 	body{
 		width:1250px;

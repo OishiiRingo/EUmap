@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1920px){   
 	body{
 		width:1890px;
-		}
+	}
 	
 	header{
 		width:1845px;
@@ -38,7 +38,7 @@
 @media only screen and (max-width: 1680px){   
 	body{
 		width:1650px;
-		}
+	}
 	
 	header{
 		width:1605px;
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 1600px){   
 	body{
 		width:1570px;
-		}
+	}
 	
 	header{
 		width:1545px;
@@ -126,7 +126,7 @@
 @media only screen and (max-width: 1536px){   
 	body{
 		width:1506px;
-		}
+	}
 	
 	header{
 		width:1481px;
@@ -162,7 +162,7 @@
 @media only screen and (max-width: 1440px){   
 	body{
 		width:1410px;
-		}
+	}
 	
 	header{
 		width:1385px;
@@ -206,7 +206,7 @@
 @media only screen and (max-width: 1400px){   
 	body{
 		width:1370px;
-		}
+	}
 	
 	header{
 		width:1345px;
@@ -247,10 +247,55 @@
 	}
 }
 
+
+@media only screen and (max-width: 1366px){   
+	body{
+		width:1350px;
+	}
+	
+	header{
+		width:1345px;
+	}
+	
+	.search{
+		margin-left:170px;
+	}
+	
+	.registr{
+		margin-left:230px;
+	}
+	
+	.vertical{
+		height: 790px;
+		margin-left: 895px;
+	}
+	
+	.info{
+		margin-left: 935px;
+		width:400px;
+	}
+
+	hr{
+		width: 1320px;
+	}
+	
+	.EUmap{
+		width: 800px;
+	}
+
+	.WhitePower{
+		margin-left: 935px;
+	}
+	
+	.Legend{
+		margin-left: 935px;
+	}
+}
+
 @media only screen and (max-width: 1280px){   
 	body{
 		width:1250px;
-		}
+	}
 	
 	header{
 		width:1222px;
@@ -294,7 +339,7 @@
 @media only screen and (max-width: 1200px){   
 	body{
 		width:1170px;
-		}
+	}
 	
 	header{
 		width:1145px;
@@ -377,7 +422,7 @@
 @media only screen and (max-width: 1024px){   
 	body{
 		width:996px;
-		}
+	}
 	
 	header{
 		width:971px;
@@ -442,7 +487,7 @@
 	body{
 		width:930px;
 		margin-top:130px;
-		}
+	}
 	
 	header{
 		width:905px;
