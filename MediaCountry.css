@@ -241,24 +241,13 @@
 	}
 	
 	.info{
-		margin-left: 935px;
-		width:400px;
+		margin-left: 900px;
+		width:360px;
+		font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	}
 
 	hr{
 		width: 1320px;
-	}
-	
-	.EUmap{
-		width: 800px;
-	}
-
-	.WhitePower{
-		margin-left: 935px;
-	}
-	
-	.Legend{
-		margin-left: 935px;
 	}
 }
 
