@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="EUcountry.css">
 		<link rel="stylesheet" href="Modal.css">
 		<link rel="stylesheet" href="InteractiveCSS.css">
+		<link rel="stylesheet" href="MediaCountry.css">		
 		
 		<title>Interactive european map</title>
 	</head>
@@ -30,37 +31,38 @@
 				<button id="Log" class="login" onclick='OpenLog()'>Логин</button>
 			</div>
 		</header>
-		
-		<hr>
-		
-		<div class="country_info">
+	
+		<div class="div_country_info">
 			<img class="flag" src="flags/flag_austria.png">
 			<h1>Австрия</h1>
 			<div class="info">
 				<span>Столица - </span><span>Вена</span><span>.</span><p></p>
-				<span>Форма правления - </span><span>Федеративная парламентская республика</span> <span>.</span><p></p>
-				<span>Положение - </span><span>Западная Европа</span> <span>.</span><p></p>
-				<span>Состояние в Евросоюзе - </span><span>Да</span> <span>.</span><p></p>
-				<span>Площадь - </span><span>83879</span> <span> км&sup2;.</span><p></p>
-				<span>Протяженность береговой линии - </span>0<span></span> <span> км.</span><p></p>
-				<span>Место по площади в Европе - </span>20<span></span> <span>.</span><p></p>
-				<span>Место по площади в мире - </span>113<span></span> <span>.</span><p></p>
-				<span>Население - </span><span>8711770</span> <span> человек.</span><p></p>
-				<span>Плотность населения - </span><span>102.1</span> <span> чел/км&sup2;.</span><p></p>
-				<span>Валюта - </span><span>EUR</span> <span>.</span><p></p>
-				<span>ВВП по ППС - </span><span>440</span> <span>&#36;млрд.</span><p></p>
-				<span>Основной продукт экспорта - </span><span>Техническое оборудование и транспорт</span> <span>.</span><p></p>
+				<span>Форма правления - </span><span>Федеративная парламентская республика</span><span>.</span><p></p>
+				<span>Положение - </span><span>Западная Европа</span><span>.</span><p></p>
+				<span>Состояние в Евросоюзе - </span><span>Да</span><span>.</span><p></p>
+				<span>Площадь - </span><span>83879</span><span> км&sup2;.</span><p></p>
+				<span>Протяженность береговой линии - </span>0<span></span><span> км.</span><p></p>
+				<span>Место по площади в Европе - </span>20<span></span><span>.</span><p></p>
+				<span>Место по площади в мире - </span>113<span></span><span>.</span><p></p>
+				<span>Население - </span><span>8711770</span><span> человек.</span><p></p>
+				<span>Плотность населения - </span><span>102.1</span><span> чел/км&sup2;.</span><p></p>
+				<span>Валюта - </span><span>EUR</span><span>.</span><p></p>
+				<span>ВВП по ППС - </span><span>440</span><span>&#36;млрд.</span><p></p>
+				<span>Основной продукт экспорта - </span><span>Техническое оборудование и транспорт</span><span>.</span><p></p>
 			</div>
-			<p>Австрия (нем. Österreich), официальное название — Австрийская Республика (Republik Österreich) — государство в Центральной Европе.</p>
-			
+			<div class="country_info">
+				<p>Австрия (нем. Österreich), официальное название — Австрийская Республика (Republik Österreich) — государство в Центральной Европе. Член Организации Объединённых Наций, Европейского союза. В 1955 году провозгласила постоянный нейтралитет и неприсоединение к каким-либо военным блокам. Название страны происходит от древненемецкого Ostarreіch — «Восточное государство». Название «Австрия» впервые упоминается в документе от 1 ноября 996 г.</p>
+				<p>Австрийский флаг является одним из самых древних государственных символов в мире. Согласно преданию, в 1191 году, во время одной из битв третьего крестового похода, белоснежная рубашка Леопольда V полностью была забрызгана кровью. Когда герцог снял с себя широкий пояс, на рубашке образовалась белая полоса. Сочетание этих цветов стало его знаменем, а в будущем флагом Австрийской Республики.</p>
+			</div>
 
-		</div>
+		</div>		
 		
+		<hr class="vertical">
+
 		<div class = "Window_close">
 			<span class="close"> &times; </span>
 		</div>
 		<div id="Modal_Reg" class="modal">
-			<form action="verification.php" method="POST">
 				<table class = "Reg_table">
 					<caption><h1>Регистрация</h1></caption>
 					<tr>
@@ -85,11 +87,9 @@
 						<td colspan="2"><button id="Modal_reg_button" class="Reg" >Регистрация</button></td>
 					</tr>
 				</table>
-			</form>
 		</div>
 
 		<div id="Modal_Log" class="modal">
-			<form action="verification.php" method="POST">
 				<table class = "Reg_table">
 					<caption><h1>Войти</h1></caption>
 					<tr>
@@ -108,16 +108,15 @@
 						<td colspan="2"><button id="Modal_log_button" class="Reg">Войти</button></td>
 					</tr>
 				</table>
-			</form>
 		</div>
 		<script src="Modal_scripts.js"></script>
 		<script src="InteractiveJS.js"></script>
 	
 		<footer>
-			<hr class="bottom">
+			<hr>
 			<div>info <span>типа футер</div>
 			<div>info</div>
-			<div>&copy;</div>
+			<div>info</div>
 		</footer>
 	</body>
 </html>
