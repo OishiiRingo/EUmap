@@ -7,42 +7,51 @@
 	width: 220px;
 	height: 270px;
 	background-color: #333;
-
 }
 
-.Reg_table{
+.log_table{
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	text-align: center;
 	margin-left: 20px;
 	color:#dcdcdc;
 }
 
-.Reg{
+.log{
 	text-decoration:none;
 	text-align:center;
 	border: none;
-	padding: 10px;
+	padding: 7px 45px;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	color:#dcdcdc;
 	background:#24292d;
+	margin-top:10px;
 }
-.Reg:hover{
+
+.log:hover{
 	border: none;
-	top: 10px;
-	padding: 10px;
+	padding: 7px 45px;
 	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	color:#dcdcdc;
 	background-color:#31383d;
+	margin-top:10px;
 }
-.Reg:active{
+
+.log:active{
 	border: none;
-	padding: 10px;
-	font:184x "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 7px 45px;
+	font:14x "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	color:#dcdcdc;
 	background-color:#414b54;
+	margin-top:10px;
+}
+
+.reg,.reg:hover,.reg:active{
+	margin-top:5px;
+	padding: 7px 22px;
+	margin-left:2px;
 }
 
 .Window_close{

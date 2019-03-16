@@ -22,13 +22,9 @@
 				<input list = "netfantazii" type = "text" id="search" placeholder="Название страны..." class="search" onkeyup = "CreateOption()"><datalist id = "netfantazii"></datalist>
 				<input type="submit" value="Найти" class="submit" onclick="SearchCountry()">
 			</div>
-		
+
 			<div class="head">
-				<button id="Reg" class="registr" onclick='OpenReg()'>Регистрация</button>
-			</div>
-			
-			<div class="head">
-				<button id="Log" class="login" onclick='OpenLog()'>Логин</button>
+				<button id="Log" class="login" onclick='OpenLog()'>Вход</button>
 			</div>
 		</header>
 	
@@ -54,69 +50,36 @@
 				<p>Австрия (нем. Österreich), официальное название — Австрийская Республика (Republik Österreich) — государство в Центральной Европе. Член Организации Объединённых Наций, Европейского союза. В 1955 году провозгласила постоянный нейтралитет и неприсоединение к каким-либо военным блокам. Название страны происходит от древненемецкого Ostarreіch — «Восточное государство». Название «Австрия» впервые упоминается в документе от 1 ноября 996 г.</p>
 				<p>Австрийский флаг является одним из самых древних государственных символов в мире. Согласно преданию, в 1191 году, во время одной из битв третьего крестового похода, белоснежная рубашка Леопольда V полностью была забрызгана кровью. Когда герцог снял с себя широкий пояс, на рубашке образовалась белая полоса. Сочетание этих цветов стало его знаменем, а в будущем флагом Австрийской Республики.</p>
 			</div>
-
 		</div>		
-		
-		<hr class="vertical">
 
 		<div class = "Window_close">
 			<span class="close"> &times; </span>
 		</div>
-		<div id="Modal_Reg" class="modal">
-				<table class = "Reg_table">
-					<caption><h1>Регистрация</h1></caption>
-					<tr>
-						<td>Логин:</td>
-					</tr>
-					<tr>
-						<td><input id ="Login_reg" type="text" size="20"></td>
-					</tr>
-					<tr>
-						<td>Пароль:</td>
-					</tr>
-					<tr>
-						<td><input id ="Password_reg" type="password" size="20" maxlength="20"></td>
-					</tr>
-					<tr>
-						<td>Подтверждение пароля:</td>
-					</tr>
-					<tr>
-						<td><input id ="Password2_reg" type="password" size="20" maxlength="20"></td>
-					</tr>
-					<tr>
-						<td colspan="2"><button id="Modal_reg_button" class="Reg" >Регистрация</button></td>
-					</tr>
-				</table>
-		</div>
 
 		<div id="Modal_Log" class="modal">
-				<table class = "Reg_table">
-					<caption><h1>Войти</h1></caption>
-					<tr>
-						<td>Логин:</td>
+			<table class = "log_table">
+				<caption><h1>Войти</h1></caption>
+				<tr>
+					<td>Логин:</td>
 					</tr>
-					<tr>
-						<td><input type="text" size="20" name="login_reg"></td>
-					</tr>
-					<tr>
-						<td>Пароль:</td>
-					</tr>
-					<tr>
-						<td><input type="password" size="20" maxlength="20" name="password_reg"></td>
-					</tr>
-					<tr>
-						<td colspan="2"><button id="Modal_log_button" class="Reg">Войти</button></td>
-					</tr>
-				</table>
+				<tr>
+					<td><input type="text" size="20" name="login"></td>
+				</tr>
+				<tr>
+					<td>Пароль:</td>
+				</tr>
+				<tr>
+					<td><input type="password" size="20" maxlength="20" name="password"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="Modal_log_button" class="log">Войти</button></td>
+				</tr>
+				<tr>
+					<td><button id="Modal_log_button" class="log reg">Регистрация</button></td>
+				<tr>
+			</table>
 		</div>
 		<script src="Modal_scripts.js"></script>
 		<script src="InteractiveJS.js"></script>
-	
-		<footer>
-			<hr>
-			<div>info <span>типа футер</div>
-			<div>info</div>
-			<div>info</div>
-		</footer>
 	</body>
 </html>

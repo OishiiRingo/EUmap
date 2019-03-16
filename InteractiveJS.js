@@ -1,4 +1,3 @@
-
 var Countries = ["Austria","Belgium","Britain","Germany","Ireland","Liechtenstein","Luxembourg","Monako","Netherlands","France","Switzerland","Belarus","Bulgaria","Hungary","Moldavia","Poland","Russia","Romania","Slovakia","Czech","Ukraine","Denmark","Iceland","Latvia","Lithuania","Norway","Finland","Estonia","Sweden","Albania","Andorra","Bosnia","Vatican","Greece","Spain","Italy","Macedonia","Malta","Portugal","San-Marino","Serbia","Slovenia","Croatia","Montenegro"]; //Все страны
 var ATM = "Vatican"; //Абсолютная теократическая монархия
 var DM = "Liechtenstein" //Дуалистическая монархия

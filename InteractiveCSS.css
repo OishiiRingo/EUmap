@@ -6,16 +6,6 @@ svg{
 	width: 100%;
 }
 
-/*.EUmap{
-	height: 100%;
-	width: 100%;
-}
-
-.Countries{
-	height: 100%;
-	width: 100%;
-}*/
-
 .Malta_default,.Vatican_default,.San-Marino_default,.Monako_default,.Andorra_default,.Liechtenstein_default,.Austria_default,.Belgium_default,.Britain_default,.Germany_default,.Belarus_default,.Bulgaria_default,.Moldavia_default,.Poland_default,.Russia_default,.Romania_default,.Slovakia_default,.Czech_default,.Ukraine_default,.Denmark_default,.Iceland_default,.Latvia_default,.Ireland_default,.Luxembourg_default,.Montenegro_default,.Croatia_default,.Slovenia_default,.Serbia_default,.Portugal_default,.Macedonia_default,.Italy_default,.Spain_default,.Greece_default,.Bosnia_default,.Albania_default,.Sweden_default,.Estonia_default,.Finland_default,.Norway_default,.Lithuania_default,.Netherlands_default,.France_default,.Switzerland_default,.Hungary_default{
 	opacity: 0;
 	fill: green;
